@@ -1,0 +1,10 @@
+-content_for :notice do
+  %h1 YOU ARE WINNNNNNER 1000000
+
+#p-users
+  %h1 Listing users
+  %table
+    - @users.each do |user|
+      = render user
+  %br/
+  = link_to 'New User', new_user_path
